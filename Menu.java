@@ -18,5 +18,8 @@ public class Menu {
         ListOperation list = new ListOperation(size);
 
         System.out.println(Arrays.toString(list.getList()));
+
+        System.out.println(list.getMax());
+        System.out.println(list.getMin());
     }
 }

@@ -20,6 +20,30 @@ public class ListOperation
         return this.list;
     }
 
-    
+    public int getMax()
+    {
+        int max = Integer.MIN_VALUE;
+        for (int i = 0; i < this.list.length; i++)
+        {
+            if (this.list[i] > max)
+            {
+                max = this.list[i];
+            }
+        }
+        return max;
+    }
+
+    public int getMin()
+    {
+        int min = Integer.MAX_VALUE;
+        for (int i = 0; i < this.list.length; i++)
+        {
+            if (this.list[i] < min)
+            {
+                min = this.list[i];
+            }
+        }
+        return min;
+    }
 
 }

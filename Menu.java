@@ -21,5 +21,6 @@ public class Menu {
 
         System.out.println(list.getMax());
         System.out.println(list.getMin());
+        System.out.println(Arrays.toString(list.averageFinding()));
     }
 }

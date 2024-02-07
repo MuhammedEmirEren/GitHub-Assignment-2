@@ -21,7 +21,6 @@ public class ListOperation
         return this.list;
     }
 
-<<<<<<< Updated upstream
     public int getMax()
     {
         int max = Integer.MIN_VALUE;
@@ -47,20 +46,19 @@ public class ListOperation
         }
         return min;
     }
-=======
-    public void averageFinding(int[] list){
+
+    public int[] averageFinding(){
         int sum=0;
-        for(int i=0;i<list.length;i++){
+        for(int i=0; i<list.length; i++){
             sum+=list[i];
         }
         int average=sum/list.length;
-        int[] newlist=new int[list.length];
+        int[] newlist= new int[list.length];
         for(int i=0;i<list.length;i++){
-            newlist[i]=list[i]-average;
+            newlist[i] = list[i]-average;
         }
-        System.out.println(Arrays.toString(newlist));
+        return newlist;
     }
     
->>>>>>> Stashed changes
 
 }

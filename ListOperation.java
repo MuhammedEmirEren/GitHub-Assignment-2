@@ -1,4 +1,4 @@
-import java.util.Arrays;
+
 import java.util.Random;
 
 public class ListOperation
@@ -14,11 +14,19 @@ public class ListOperation
             list[i] = rand.nextInt(101); 
         }        
     }
-
+/**
+ * 
+ * @return the list 
+ */
     public int[] getList()
     {
         return this.list;
     }
+    /**
+     * 
+     * 
+     * @return the sum of indexes of the list
+     */
     public int sumOfOddIndexes()
     {
         int sumOfOdds= 0;
@@ -30,6 +38,11 @@ public class ListOperation
 
         return sumOfOdds;
     }
+    /**
+     * 
+     * 
+     * @return the sum of even indexes of the list
+     */
     public int sumOfEvenIndexes()
     {
         int sumOfEvens = 0;
@@ -41,6 +54,10 @@ public class ListOperation
 
         return sumOfEvens;
     }
+    /**
+     * Finds the average of the list 
+     * @return a new list consist of the differences of elements of list and average
+     */
     public int[] averageFinding(){
         int sum=0;
         for(int i=0; i<list.length; i++){
@@ -54,7 +71,10 @@ public class ListOperation
         
         return newlist ;
     }
-    
+    /**
+     * 
+     * @return the max value of te list
+     */
     public int getMax()
     {
         int max = Integer.MIN_VALUE;
@@ -67,7 +87,11 @@ public class ListOperation
         }
         return max;
     }
-
+/**
+ * 
+ * 
+ * @return the min value of te list
+ */
     public int getMin()
     {
         int min = Integer.MAX_VALUE;

@@ -5,7 +5,6 @@ public class ListOperation
 {
     private Random rand;
     private int[] list;
-
     public ListOperation(int sizeOfList)
     {
         rand = new Random();
@@ -20,33 +19,28 @@ public class ListOperation
     {
         return this.list;
     }
-
-    public int getMax()
+    public int sumOfOddIndexes()
     {
-        int max = Integer.MIN_VALUE;
-        for (int i = 0; i < this.list.length; i++)
+        int sumOfOdds= 0;
+        
+        for(int i = 1; i < this.list.length; i = i + 2)
         {
-            if (this.list[i] > max)
-            {
-                max = this.list[i];
-            }
+            sumOfOdds = sumOfOdds + this.list[i];
         }
-        return max;
-    }
 
-    public int getMin()
+        return sumOfOdds;
+    }
+    public int sumOfEvenIndexes()
     {
-        int min = Integer.MAX_VALUE;
-        for (int i = 0; i < this.list.length; i++)
-        {
-            if (this.list[i] < min)
-            {
-                min = this.list[i];
-            }
-        }
-        return min;
-    }
+        int sumOfEvens = 0;
 
+        for(int i = 0; i < this.list.length; i = i + 2)
+        {
+            sumOfEvens = sumOfEvens + this.list[i];
+        }
+
+        return sumOfEvens;
+    }
     public int[] averageFinding(){
         int sum=0;
         for(int i=0; i<list.length; i++){

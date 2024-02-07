@@ -40,7 +40,7 @@ public class Menu {
             }
             else if (choice == 2)
             {
-                System.out.println("Average of the array i: " + list.averageFinding());
+                System.out.println("Average of the array i: " + Arrays.toString(list.averageFinding()));
             }
             else if (choice == 3)
             {

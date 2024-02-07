@@ -51,7 +51,8 @@ public class ListOperation
         for(int i=0;i<list.length;i++){
             newlist[i] = list[i]-average;
         }
-        return newlist;
+        
+        return newlist ;
     }
     
     public int getMax()

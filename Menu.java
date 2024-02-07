@@ -17,6 +17,8 @@ public class Menu {
 
         ListOperation list = new ListOperation(size);
 
+        System.out.println(Arrays.toString(list.getList()));
+
 
         int choice = 0;
 
@@ -24,7 +26,7 @@ public class Menu {
         {
             System.out.println();
             System.out.println("Enter 1 to find the minimum and the maximum of the array");
-            System.out.println("Enter 2 to find the average of the array");
+            System.out.println("Enter 2 to find the average of the array and display how each element of the array differs from the average");
             System.out.println("Enter 3 to find the sum of elements with odd- and even-numbered indexes");
             System.out.println("Enter -1 to exit");
 
